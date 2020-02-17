@@ -1,5 +1,5 @@
 # Cyclum-Demo:
-A self-contained [demo](https://github.com/KChen-lab/Cyclum-Demo/blob/master/mESC.ipynb) of Cyclum, ships with the mESC data.
+A self-contained [demo in Jupyter notebook](https://github.com/KChen-lab/Cyclum-Demo/blob/master/mESC.ipynb) of Cyclum, ships with the mESC data. A simple [downstream analysis](mesc_analysis.nb.html) is available.
 
 The demo is available in "mESC.ipynb". It is accessible through jupyter notebook. Instruction for each step is available in the notebook. The expected output is available in "mESC.html". On a computer equipped with an Cuda-ready GPU, it will take about 20 minutes to run. If only CPU is available, it may take around 1 hour.
 
