@@ -1,5 +1,5 @@
 # Cyclum-Demo:
-A self-contained [demo in Jupyter notebook](https://github.com/KChen-lab/Cyclum-Demo/blob/master/mESC.ipynb) of Cyclum, ships with the mESC dataset ([Computational analysis of cell-to-cell heterogeneity in single-cell RNA-sequencing data reveals hidden subpopulations of cells](https://www.nature.com/articles/nbt.3102)). A simple [downstream analysis](https://kchen-lab.github.io/Cyclum-Demo/mesc_analysis.nb.html) is available.
+A self-contained [demo in Jupyter notebook](https://github.com/KChen-lab/Cyclum-Demo/blob/master/mESC.ipynb) of Cyclum, ships with the mESC dataset ([Computational analysis of cell-to-cell heterogeneity in single-cell RNA-sequencing data reveals hidden subpopulations of cells](https://www.nature.com/articles/nbt.3102)). A simple [downstream analysis](https://kchen-lab.github.io/Cyclum-Demo/mesc_analysis.nb.html) is also available in this repository.
 
 The demo is available in "mESC.ipynb". It is accessible through jupyter notebook. Instruction for each step is available in the notebook. The expected output is available in "mESC.html". On a computer equipped with an Cuda-ready GPU, it will take about 20 minutes to run. If only CPU is available, it may take around 1 hour.
 
