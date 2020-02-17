@@ -1,0 +1,41 @@
+---
+title: "mESC Analysis"
+output: html_notebook
+---
+
+## Dependencies
+The software versions are provieded in the SessionInfo at the end.
+`mclust` and `hdf5r` is required.
+
+```{r}
+library(mclust)
+source("R/utils/reader.R")
+source("R/utils/mclust_plot.R")
+source("R/utils/hdfrw.R")
+```
+
+## Read in the data
+
+```{r}
+cell_line = "mESC"
+lab = c(rep('g0/g1', 96), rep('s', 96), rep('g2/m', 96))
+cyclum <- hdf2mat('cyclum-pseudotime.h5')
+```
+
+## Train an mclust GMM to evaluate the accuracy.
+
+```{r}
+groundtruth <- vector(length = length(lab))
+groundtruth[lab == 'g0/g1'] = 1
+groundtruth[lab == 's'] = 2
+groundtruth[lab == 'g2/m'] = 3
+
+mclust_result <- MclustDA(cyclum, groundtruth, verbose = F)
+plot(mclust_result, col=c('#FF0000', '#00FF00', '#0000FF'), what="scatterplot")
+title(paste('cyclum Accuracy:', round(1 - summary(mclust_result)$err, 3)))
+```
+
+```{r}
+sessionInfo()
+```
+
