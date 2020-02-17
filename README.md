@@ -11,15 +11,17 @@ Operating System: Debian GNU/Linux 10 (buster)
 The code should run on most mainstream systems (Linux, Mac, Windows) supporting Tensorflow. Enabling GPU computing gives significantly better performance (5 minutes vs 30 minutes for CPU), but is not requried.
 
 ## Software dependencies: 
-python 3.7.4
-keras 2.2.4
-tensorflow 1.14.0
-numpy 1.16.5
-pandas 0.25.2
-scikit-learn 0.21.3
-h5py 2.9.0
-hdf5 1.10.4
-jupyter 1.0.0
++------------+--------+
+|python      | 3.7.4  |
+|keras       | 2.2.4  |
+|tensorflow  | 1.14.0 |
+|numpy       | 1.16.5 |
+|pandas      | 0.25.2 |
+|scikit-learn| 0.21.3 |
+|h5py        | 2.9.0  |
+|hdf5        | 1.10.4 |
+|jupyter     | 1.0.0  |
++------------+--------+
 
 We recommend Miniconda to manage the packages. The code should work on packages of newer versions, but in case it fails, you can return to the specific version by for example `conda install python=3.7.4`.
 
