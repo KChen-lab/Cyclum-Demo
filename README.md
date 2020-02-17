@@ -24,7 +24,7 @@ The code should run on most mainstream systems (Linux, Mac, Windows) supporting 
 |hdf5        | 1.10.4 |
 |jupyter     | 1.0.0  |
 
-We recommend Miniconda to manage the packages. The code should work on packages of newer versions, but in case it fails, you can return to the specific version by for example `conda install python=3.7.4`.
+We recommend Miniconda to manage the packages. The code should work on packages of newer versions, but in case it fails, you can return to the specific version by, for example, `conda install python=3.7.4`.
 
 ## Installation: 
 No installation is needed.
