@@ -1,14 +1,10 @@
 # Cyclum-Demo:
-A self-contained [demo in Jupyter notebook](https://github.com/KChen-lab/Cyclum-Demo/blob/master/mESC.ipynb) of Cyclum, ships with the mESC dataset ([Computational analysis of cell-to-cell heterogeneity in single-cell RNA-sequencing data reveals hidden subpopulations of cells](https://www.nature.com/articles/nbt.3102)). A simple [downstream analysis](https://kchen-lab.github.io/Cyclum-Demo/mesc_analysis.nb.html) is also available in this repository.
+A self-contained demo of Cyclum, in Jupyter notebook, is available in [`mESC.ipynb`](https://github.com/KChen-lab/Cyclum-Demo/blob/master/mESC.ipynb). It works with the mESC dataset ([Computational analysis of cell-to-cell heterogeneity in single-cell RNA-sequencing data reveals hidden subpopulations of cells](https://www.nature.com/articles/nbt.3102)). It shows shows how to start with an expression matrix, then decide the optimal dimensionality, and finally calculate the circular pseudotime. On a computer equipped with an Cuda-ready GPU, it will take about 20 minutes to run. If only CPU is available, it may take around 1 hour.
 
-The demo is available in "mESC.ipynb". It is accessible through jupyter notebook. Instruction for each step is available in the notebook. The expected output is available in "mESC.html". On a computer equipped with an Cuda-ready GPU, it will take about 20 minutes to run. If only CPU is available, it may take around 1 hour.
-
-The analysis of the result was done in R, and a demo is available in "mesc_analysis.Rmd". Running it will take around five seconds. The expected result is available in "mesc_analysis.nb.html".
+The analysis of the result was done in R, and a demo is available in [`mesc_analysis.Rmd`](https://kchen-lab.github.io/Cyclum-Demo/mesc_analysis.nb.html). Running it will take around five seconds. The expected result is available in "mesc_analysis.nb.html". It relies on `cyclum-pseudotime.h5`, the result of the Jupyter notebook.
 
 ## System requriment:
-Operating System: Debian GNU/Linux 10 (buster)
-
-The code should run on most mainstream systems (Linux, Mac, Windows) supporting Tensorflow. Enabling GPU computing gives significantly better performance (5 minutes vs 30 minutes for CPU), but is not requried.
+The code is on Debian GNU/Linux 10 (buster) with both CPU and GPU. The code should run on most mainstream systems (Linux, Mac, Windows) supporting Tensorflow.
 
 ## Software dependencies: 
 
